@@ -8,6 +8,12 @@
 	align-items: flex-start;
 	padding-left: 110px;
 
+	@media screen and (max-width: $break-point) {
+		padding: 30px;
+		align-items: center;
+		text-align: center;
+	}
+
 	h2 {
 		font-family: 'Fraunces', serif;
 		font-weight: 900;

@@ -4,8 +4,15 @@
 	grid-area: testimonials;
 	padding: 160px;
 	display: grid;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 350px;
 	text-align: center;
+
+	@media screen and (max-width: $break-point) {
+		padding: 65px 30px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1020px;
+	}
 
 	h2 {
 		font-family: 'Fraunces', serif;
@@ -17,7 +24,13 @@
 	ul {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
 		grid-gap: 30px;
+
+		@media screen and (max-width: $break-point) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, 1fr);
+		}
 
 		li {
 			display: flex;
