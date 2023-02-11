@@ -5,6 +5,8 @@ import ArrowDown from '../../assets/icons/arrow-down.svg';
 import DesktopHeaderImage from '../../assets/desktop/header.jpg';
 
 export default function Header() {
+	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
+
 	return (
 		<div className='header'>
 			<img src={DesktopHeaderImage} alt='' />
@@ -12,13 +14,19 @@ export default function Header() {
 				<img src={Logo} alt='' className='logo' />
 				<ul>
 					<li>
-						<a href=''>About</a>
+						<a href={link} target='_blank' rel='noreferrer'>
+							About
+						</a>
 					</li>
 					<li>
-						<a href=''>Services</a>
+						<a href={link} target='_blank' rel='noreferrer'>
+							Services
+						</a>
 					</li>
 					<li>
-						<a href=''>Projects</a>
+						<a href={link} target='_blank' rel='noreferrer'>
+							Projects
+						</a>
 					</li>
 					<li>
 						<button>CONTACT</button>

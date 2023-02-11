@@ -7,38 +7,46 @@ import TwitterIcon from '../../assets/icons/twitter.svg';
 import PinterestIcon from '../../assets/icons/pinterest.svg';
 
 export default function Footer() {
+	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
+
 	return (
 		<div className='footer'>
 			<img src={Logo} alt='' className='footer-logo' />
 			<ul className='footer-links'>
 				<li>
-					<a href=''>About</a>
+					<a href={link} target='_blank' rel='noreferrer'>
+						About
+					</a>
 				</li>
 				<li>
-					<a href=''>Services</a>
+					<a href={link} target='_blank' rel='noreferrer'>
+						Services
+					</a>
 				</li>
 				<li>
-					<a href=''>Projects</a>
+					<a href={link} target='_blank' rel='noreferrer'>
+						Projects
+					</a>
 				</li>
 			</ul>
 			<ul className='footer-socials'>
 				<li>
-					<a href=''>
+					<a href={link} target='_blank' rel='noreferrer'>
 						<img src={FacebookIcon} alt='' />
 					</a>
 				</li>
 				<li>
-					<a href=''>
+					<a href={link} target='_blank' rel='noreferrer'>
 						<img src={InstagramIcon} alt='' />
 					</a>
 				</li>
 				<li>
-					<a href=''>
+					<a href={link} target='_blank' rel='noreferrer'>
 						<img src={TwitterIcon} alt='' />
 					</a>
 				</li>
 				<li>
-					<a href=''>
+					<a href={link} target='_blank' rel='noreferrer'>
 						<img src={PinterestIcon} alt='' />
 					</a>
 				</li>

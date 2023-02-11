@@ -14,7 +14,9 @@ export default function StandOut() {
 					Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend
 					your brand in digital places.
 				</p>
-				<a href=''>LEARN MORE</a>
+				<a href='https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef' target='_blank' rel='noreferrer'>
+					LEARN MORE
+				</a>
 			</div>
 		</>
 	);
