@@ -1,6 +1,7 @@
 import React from 'react';
 import './Transform.scss';
 import DesktopTransformImage from '../../assets/desktop/transform.jpg';
+import MobileTransformImage from '../../assets/mobile/transform.jpg';
 
 export default function Transform() {
 	return (
@@ -14,7 +15,7 @@ export default function Transform() {
 				<a href='https://www.frontendmentor.io/profile/paladinescamila'>LEARN MORE</a>
 			</div>
 			<div className='transform-image'>
-				<img src={DesktopTransformImage} alt='' />
+				<img src={window.innerWidth > 600 ? DesktopTransformImage : MobileTransformImage} alt='' />
 			</div>
 		</>
 	);

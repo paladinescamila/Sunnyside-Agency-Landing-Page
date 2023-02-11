@@ -1,12 +1,13 @@
 import React from 'react';
 import './StandOut.scss';
 import DesktopStandOutImage from '../../assets/desktop/stand-out.jpg';
+import MobileStandOutImage from '../../assets/mobile/stand-out.jpg';
 
 export default function StandOut() {
 	return (
 		<>
 			<div className='stand-out-image'>
-				<img src={DesktopStandOutImage} alt='' />
+				<img src={window.innerWidth > 600 ? DesktopStandOutImage : MobileStandOutImage} alt='' />
 			</div>
 			<div className='stand-out-text'>
 				<h2>Stand out to the right audience</h2>
