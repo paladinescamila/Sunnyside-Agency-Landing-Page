@@ -1,4 +1,5 @@
 import React from 'react';
+import './Photography.scss';
 import DesktopPhotographyImage from '../../assets/desktop/photography.jpg';
 
 export default function Photography() {

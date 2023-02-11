@@ -1,4 +1,5 @@
 import React from 'react';
+import './Gallery.scss';
 import DesktopMilkBottlesImage from '../../assets/desktop/milk-bottles.jpg';
 import DesktopOrangeImage from '../../assets/desktop/orange.jpg';
 import DesktopConeImage from '../../assets/desktop/cone.jpg';

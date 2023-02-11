@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.scss';
 import Logo from './assets/logo.svg';
 import DesktopHeaderImage from '../../assets/desktop/header.jpg';
 

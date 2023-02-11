@@ -1,4 +1,5 @@
 import React from 'react';
+import './Transform.scss';
 import DesktopTransformImage from '../../assets/desktop/transform.jpg';
 
 export default function Transform() {

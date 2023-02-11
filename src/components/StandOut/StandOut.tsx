@@ -1,4 +1,5 @@
 import React from 'react';
+import './StandOut.scss';
 import DesktopStandOutImage from '../../assets/desktop/stand-out.jpg';
 
 export default function StandOut() {

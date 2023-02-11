@@ -1,4 +1,5 @@
 import React from 'react';
+import './GraphicDesign.scss';
 import DesktopGraphicDesignImage from '../../assets/desktop/graphic-design.jpg';
 
 export default function GraphicDesign() {

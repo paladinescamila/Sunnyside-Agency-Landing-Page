@@ -1,0 +1,30 @@
+.testimonials {
+	grid-area: testimonials;
+	padding: 160px;
+	display: grid;
+	grid-template-rows: 1fr 350px;
+	text-align: center;
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	img {
+		width: 72px;
+		height: 72px;
+		border-radius: 40px;
+		-webkit-border-radius: 40px;
+		-moz-border-radius: 40px;
+		-ms-border-radius: 40px;
+		-o-border-radius: 40px;
+	}
+}

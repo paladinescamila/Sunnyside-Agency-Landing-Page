@@ -1,4 +1,5 @@
 import React from 'react';
+import './Testimonials.scss';
 import EmilyProfile from '../../assets/profiles/emily.jpg';
 import ThomasProfile from '../../assets/profiles/thomas.jpg';
 import JennieProfile from '../../assets/profiles/jennie.jpg';
