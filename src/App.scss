@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	// outline: 1px solid red;
+}
+
+ul {
+	list-style: none;
+}
+
+#root {
+	display: grid;
+	grid-template-columns: repeat(4, 25vw);
+	grid-template-rows: 800px 600px 600px 600px 777px 447px 350px;
+	grid-template-areas:
+		'header header header header'
+		'transform-text transform-text transform-image transform-image'
+		'stand-out-image stand-out-image stand-out-text stand-out-text'
+		'graphic-design graphic-design photography photography'
+		'testimonials testimonials testimonials testimonials'
+		'milk-bottles orange cone sugar-cubes'
+		'footer footer footer footer';
+}
+
+.header {
+	grid-area: header;
+}
+
+.transform-text {
+	grid-area: transform-text;
+	padding: 160px 115px 160px 160px;
+}
+
+.transform-image {
+	grid-area: transform-image;
+}
+
+.stand-out-image {
+	grid-area: stand-out-image;
+}
+
+.stand-out-text {
+	grid-area: stand-out-text;
+	padding: 160px 160px 160px 110px;
+}
+
+.graphic-design {
+	grid-area: graphic-design;
+}
+
+.photography {
+	grid-area: photography;
+}
+
+.testimonials {
+	grid-area: testimonials;
+	padding: 160px;
+	display: grid;
+	grid-template-rows: 1fr 350px;
+	text-align: center;
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 30px;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	img {
+		width: 72px;
+		height: 72px;
+		border-radius: 40px;
+		-webkit-border-radius: 40px;
+		-moz-border-radius: 40px;
+		-ms-border-radius: 40px;
+		-o-border-radius: 40px;
+	}
+}
+
+.milk-bottles {
+	grid-area: milk-bottles;
+}
+
+.orange {
+	grid-area: orange;
+}
+
+.cone {
+	grid-area: cone;
+}
+
+.sugar-cubes {
+	grid-area: sugar-cubes;
+}
+
+.footer {
+	grid-area: footer;
+	padding: 70px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.footer-links {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.footer-socials {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 30px;
+	}
+}
+
+.transform-image img,
+.stand-out-image img,
+.graphic-design img,
+.photography img,
+.milk-bottles img,
+.orange img,
+.cone img,
+.sugar-cubes img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.header,
+.graphic-design,
+.photography {
+	position: relative;
+
+	img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
