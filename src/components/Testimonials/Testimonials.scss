@@ -2,16 +2,20 @@
 
 .testimonials {
 	grid-area: testimonials;
-	padding: 160px;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 350px;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
+	width: 1110px;
+
+	@media screen and (max-width: 1200px) {
+		width: 90%;
+	}
 
 	@media screen and (max-width: $break-point) {
 		padding: 65px 30px;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1020px;
 	}
 
 	h2 {
@@ -19,24 +23,21 @@
 		font-size: 20px;
 		letter-spacing: 20px * 0.26;
 		color: $grayish-blue;
+		margin-bottom: 80px;
 	}
 
 	ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 1fr;
-		grid-gap: 30px;
-
-		@media screen and (max-width: $break-point) {
-			grid-template-columns: 1fr;
-			grid-template-rows: repeat(3, 1fr);
-		}
+		display: flex;
 
 		li {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
+
+			&:nth-last-of-type(2) {
+				margin: 0 30px;
+			}
 
 			.comment,
 			.role {
@@ -48,6 +49,7 @@
 				letter-spacing: 17px * 0.017;
 				line-height: 190%;
 				color: $dark-grayish-blue;
+				margin: 60px 0 70px 0;
 			}
 
 			.name {
