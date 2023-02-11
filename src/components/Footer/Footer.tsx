@@ -11,22 +11,36 @@ export default function Footer() {
 		<div className='footer'>
 			<img src={Logo} alt='' className='footer-logo' />
 			<ul className='footer-links'>
-				<li>About</li>
-				<li>Services</li>
-				<li>Projects</li>
+				<li>
+					<a href=''>About</a>
+				</li>
+				<li>
+					<a href=''>Services</a>
+				</li>
+				<li>
+					<a href=''>Projects</a>
+				</li>
 			</ul>
 			<ul className='footer-socials'>
 				<li>
-					<img src={FacebookIcon} alt='' />
+					<a href=''>
+						<img src={FacebookIcon} alt='' />
+					</a>
 				</li>
 				<li>
-					<img src={InstagramIcon} alt='' />
+					<a href=''>
+						<img src={InstagramIcon} alt='' />
+					</a>
 				</li>
 				<li>
-					<img src={TwitterIcon} alt='' />
+					<a href=''>
+						<img src={TwitterIcon} alt='' />
+					</a>
 				</li>
 				<li>
-					<img src={PinterestIcon} alt='' />
+					<a href=''>
+						<img src={PinterestIcon} alt='' />
+					</a>
 				</li>
 			</ul>
 		</div>
