@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './styles/App.scss';
 import Header from './components/Header/Header';
 import Transform from './components/Transform/Transform';
 import StandOut from './components/StandOut/StandOut';
