@@ -1,9 +1,18 @@
+@import '../../styles/variables';
+
 .testimonials {
 	grid-area: testimonials;
 	padding: 160px;
 	display: grid;
 	grid-template-rows: 1fr 350px;
 	text-align: center;
+
+	h2 {
+		font-family: 'Fraunces', serif;
+		font-size: 20px;
+		letter-spacing: 20px * 0.26;
+		color: $grayish-blue;
+	}
 
 	ul {
 		display: grid;
@@ -15,6 +24,32 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
+
+			.comment,
+			.role {
+				font-family: 'Barlow', sans-serif;
+			}
+
+			.comment {
+				font-size: 17px;
+				letter-spacing: 17px * 0.017;
+				line-height: 190%;
+				color: $dark-grayish-blue;
+			}
+
+			.name {
+				font-family: 'Fraunces', serif;
+				font-size: 18px;
+				font-weight: 900;
+				color: $very-dark-desaturated-blue;
+				margin-bottom: 10px;
+			}
+
+			.role {
+				font-size: 14px;
+				letter-spacing: 14px * (-0.005);
+				color: $grayish-blue;
+			}
 		}
 	}
 
