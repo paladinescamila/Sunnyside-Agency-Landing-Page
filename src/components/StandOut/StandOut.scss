@@ -1,8 +1,61 @@
-.stand-out-image {
-	grid-area: stand-out-image;
-}
+@import '../../styles/variables';
 
 .stand-out-text {
 	grid-area: stand-out-text;
-	padding: 160px 160px 160px 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 110px;
+
+	h2 {
+		font-family: 'Fraunces', serif;
+		font-weight: 900;
+		font-size: 40px;
+		letter-spacing: 40px * 0.01;
+		color: $very-dark-desaturated-blue;
+		width: 440px;
+	}
+
+	p {
+		font-family: 'Barlow', sans-serif;
+		font-size: 18px;
+		letter-spacing: 18px * (-0.007);
+		line-height: 160%;
+		color: $dark-grayish-blue;
+		margin: 40px 0 45px 0;
+		width: 450px;
+	}
+
+	a {
+		font-family: 'Fraunces', serif;
+		font-size: 15px;
+		letter-spacing: 15px * (0.08);
+		color: $very-dark-desaturated-blue;
+		text-decoration: none;
+		position: relative;
+		margin-left: 5px;
+
+		&:before {
+			content: '';
+			width: 110%;
+			height: 10px;
+			background-color: rgba($soft-red, 0.3);
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			bottom: -3px;
+			transform: translateX(-50%);
+			z-index: -1;
+			border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+		}
+	}
+}
+
+.stand-out-image {
+	grid-area: stand-out-image;
 }
