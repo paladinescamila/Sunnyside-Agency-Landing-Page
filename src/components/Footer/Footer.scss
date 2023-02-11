@@ -26,6 +26,10 @@
 			font-size: 18px;
 			letter-spacing: 18px * (-0.05);
 			color: $dark-desaturated-cyan;
+
+			&:hover {
+				color: $white;
+			}
 		}
 	}
 
@@ -33,5 +37,9 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 30px;
+
+		a:hover {
+			filter: brightness(10);
+		}
 	}
 }

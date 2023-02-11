@@ -45,6 +45,11 @@
 			-moz-border-radius: 28px;
 			-ms-border-radius: 28px;
 			-o-border-radius: 28px;
+
+			&:hover {
+				color: $white;
+				background-color: rgba($white, 0.3);
+			}
 		}
 	}
 

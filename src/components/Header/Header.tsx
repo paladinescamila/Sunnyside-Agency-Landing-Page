@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/white-logo.svg';
 import ArrowDown from '../../assets/icons/arrow-down.svg';
 import DesktopHeaderImage from '../../assets/desktop/header.jpg';
 

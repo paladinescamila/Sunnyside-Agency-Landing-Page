@@ -53,6 +53,10 @@
 			-ms-border-radius: 50px;
 			-o-border-radius: 50px;
 		}
+
+		&:hover::before {
+			background-color: $soft-red;
+		}
 	}
 }
 
