@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.scss';
-import Header from './components/Header/Header';
+import Banner from './components/Banner/Banner';
 import Transform from './components/Transform/Transform';
 import StandOut from './components/StandOut/StandOut';
 import GraphicDesign from './components/GraphicDesign/GraphicDesign';
@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 function App() {
 	return (
 		<>
-			<Header />
+			<Banner />
 			<Transform />
 			<StandOut />
 			<GraphicDesign />

@@ -1,16 +1,16 @@
 import React from 'react';
-import './Header.scss';
+import './Banner.scss';
 import Logo from '../../assets/white-logo.svg';
 import ArrowDown from '../../assets/icons/arrow-down.svg';
-import DesktopHeaderImage from '../../assets/desktop/header.jpg';
-import MobileHeaderImage from '../../assets/mobile/header.jpg';
+import DesktopBannerImage from '../../assets/desktop/banner.jpg';
+import MobileBannerImage from '../../assets/mobile/banner.jpg';
 
-export default function Header() {
+export default function Banner() {
 	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
 
 	return (
-		<div className='header'>
-			<img src={window.innerWidth > 800 ? DesktopHeaderImage : MobileHeaderImage} alt='' />
+		<div className='banner'>
+			<img src={window.innerWidth > 800 ? DesktopBannerImage : MobileBannerImage} alt='' />
 			<div>
 				<img src={Logo} alt='' className='logo' />
 				<ul>

@@ -17,7 +17,7 @@ ul {
 	grid-template-columns: repeat(4, 25vw);
 	grid-template-rows: 800px 600px 600px 600px 777px 447px 350px;
 	grid-template-areas:
-		'header header header header'
+		'banner banner banner banner'
 		'transform-text transform-text transform-image transform-image'
 		'stand-out-image stand-out-image stand-out-text stand-out-text'
 		'graphic-design graphic-design photography photography'
@@ -29,7 +29,7 @@ ul {
 		grid-template-columns: repeat(2, 50vw);
 		grid-template-rows: 538px 313px 437px 313px 437px 600px 600px 1260px 188px 188px 350px;
 		grid-template-areas:
-			'header header'
+			'banner banner'
 			'transform-image transform-image'
 			'transform-text transform-text'
 			'stand-out-image stand-out-image'
@@ -56,7 +56,7 @@ ul {
 	height: 100%;
 }
 
-.header,
+.banner,
 .graphic-design,
 .photography {
 	position: relative;
