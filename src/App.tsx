@@ -10,16 +10,24 @@ import Gallery from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer';
 
 function App() {
+	const [isDesktop, setIsDesktop] = React.useState(window.innerWidth > 800);
+
+	React.useEffect(() => {
+		window.addEventListener('resize', () => {
+			setIsDesktop(window.innerWidth > 800);
+		});
+	}, []);
+
 	return (
 		<>
-			<Banner />
-			<Transform />
-			<StandOut />
-			<GraphicDesign />
-			<Photography />
-			<Testimonials />
-			<Gallery />
-			<Footer />
+			<Banner isDesktop={isDesktop} />
+			<Transform isDesktop={isDesktop} />
+			<StandOut isDesktop={isDesktop} />
+			<GraphicDesign isDesktop={isDesktop} />
+			<Photography isDesktop={isDesktop} />
+			<Testimonials isDesktop={isDesktop} />
+			<Gallery isDesktop={isDesktop} />
+			<Footer isDesktop={isDesktop} />
 		</>
 	);
 }

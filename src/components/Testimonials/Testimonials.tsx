@@ -4,7 +4,11 @@ import EmilyProfile from '../../assets/profiles/emily.jpg';
 import ThomasProfile from '../../assets/profiles/thomas.jpg';
 import JennieProfile from '../../assets/profiles/jennie.jpg';
 
-export default function Testimonials() {
+interface TestimonialsProps {
+	isDesktop: boolean;
+}
+
+export default function Testimonials(props: TestimonialsProps) {
 	return (
 		<div className='testimonials'>
 			<h2>CLIENT TESTIMONIALS</h2>

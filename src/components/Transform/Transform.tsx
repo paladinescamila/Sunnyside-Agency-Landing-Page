@@ -3,7 +3,11 @@ import './Transform.scss';
 import DesktopTransformImage from '../../assets/desktop/transform.jpg';
 import MobileTransformImage from '../../assets/mobile/transform.jpg';
 
-export default function Transform() {
+interface TransformProps {
+	isDesktop: boolean;
+}
+
+export default function Transform(props: TransformProps) {
 	return (
 		<>
 			<div className='transform-text'>
@@ -17,7 +21,7 @@ export default function Transform() {
 				</div>
 			</div>
 			<div className='transform-image'>
-				<img src={window.innerWidth > 800 ? DesktopTransformImage : MobileTransformImage} alt='' />
+				<img src={props.isDesktop ? DesktopTransformImage : MobileTransformImage} alt='' />
 			</div>
 		</>
 	);

@@ -6,7 +6,11 @@ import InstagramIcon from '../../assets/icons/instagram.svg';
 import TwitterIcon from '../../assets/icons/twitter.svg';
 import PinterestIcon from '../../assets/icons/pinterest.svg';
 
-export default function Footer() {
+interface FooterProps {
+	isDesktop: boolean;
+}
+
+export default function Footer(props: FooterProps) {
 	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
 
 	return (

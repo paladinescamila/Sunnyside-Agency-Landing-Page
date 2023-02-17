@@ -3,11 +3,15 @@ import './StandOut.scss';
 import DesktopStandOutImage from '../../assets/desktop/stand-out.jpg';
 import MobileStandOutImage from '../../assets/mobile/stand-out.jpg';
 
-export default function StandOut() {
+interface StandOutProps {
+	isDesktop: boolean;
+}
+
+export default function StandOut(props: StandOutProps) {
 	return (
 		<>
 			<div className='stand-out-image'>
-				<img src={window.innerWidth > 800 ? DesktopStandOutImage : MobileStandOutImage} alt='' />
+				<img src={props.isDesktop ? DesktopStandOutImage : MobileStandOutImage} alt='' />
 			</div>
 			<div className='stand-out-text'>
 				<div>

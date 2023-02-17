@@ -5,12 +5,16 @@ import ArrowDown from '../../assets/icons/arrow-down.svg';
 import DesktopBannerImage from '../../assets/desktop/banner.jpg';
 import MobileBannerImage from '../../assets/mobile/banner.jpg';
 
-export default function Banner() {
+interface BannerProps {
+	isDesktop: boolean;
+}
+
+export default function Banner(props: BannerProps) {
 	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
 
 	return (
 		<div className='banner'>
-			<img src={window.innerWidth > 800 ? DesktopBannerImage : MobileBannerImage} alt='' />
+			<img src={props.isDesktop ? DesktopBannerImage : MobileBannerImage} alt='' />
 			<div>
 				<img src={Logo} alt='' className='logo' />
 				<ul>

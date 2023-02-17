@@ -11,20 +11,24 @@ import MobileOrangeImage from '../../assets/mobile/orange.jpg';
 import MobileConeImage from '../../assets/mobile/cone.jpg';
 import MobileSugarCubesImage from '../../assets/mobile/sugar-cubes.jpg';
 
-export default function Gallery() {
+interface GalleryProps {
+	isDesktop: boolean;
+}
+
+export default function Gallery(props: GalleryProps) {
 	return (
 		<>
 			<div className='milk-bottles'>
-				<img src={window.innerWidth > 800 ? DesktopMilkBottlesImage : MobileMilkBottlesImage} alt='' />
+				<img src={props.isDesktop ? DesktopMilkBottlesImage : MobileMilkBottlesImage} alt='' />
 			</div>
 			<div className='orange'>
-				<img src={window.innerWidth > 800 ? DesktopOrangeImage : MobileOrangeImage} alt='' />
+				<img src={props.isDesktop ? DesktopOrangeImage : MobileOrangeImage} alt='' />
 			</div>
 			<div className='cone'>
-				<img src={window.innerWidth > 800 ? DesktopConeImage : MobileConeImage} alt='' />
+				<img src={props.isDesktop ? DesktopConeImage : MobileConeImage} alt='' />
 			</div>
 			<div className='sugar-cubes'>
-				<img src={window.innerWidth > 800 ? DesktopSugarCubesImage : MobileSugarCubesImage} alt='' />
+				<img src={props.isDesktop ? DesktopSugarCubesImage : MobileSugarCubesImage} alt='' />
 			</div>
 		</>
 	);
