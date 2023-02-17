@@ -16,6 +16,7 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		position: relative;
 	}
 
 	.logo {
@@ -27,12 +28,15 @@
 		}
 	}
 
-	ul {
+	.menu-desktop,
+	.menu-mobile {
 		display: flex;
 		align-items: center;
 
-		@media screen and (max-width: 800px) {
-			display: none;
+		@for $i from 1 through 3 {
+			li:nth-of-type(#{$i}) {
+				margin: 0 50px 0 0;
+			}
 		}
 
 		a {
@@ -40,14 +44,9 @@
 			font-family: 'Barlow', sans-serif;
 			font-size: 18px;
 			color: $white;
-			margin-right: 50px;
 
 			&:hover {
 				text-decoration: underline;
-			}
-
-			@media screen and (max-width: $break-point) {
-				font-size: 20px;
 			}
 		}
 
@@ -75,6 +74,57 @@
 				color: $white;
 				background-color: rgba($white, 0.3);
 			}
+		}
+	}
+
+	.menu-mobile {
+		z-index: 100;
+		width: 100%;
+		padding: 40px 10px;
+		background-color: $menu-background;
+		flex-direction: column;
+		justify-content: center;
+		position: absolute;
+		top: 70px;
+
+		@for $i from 1 through 3 {
+			li:nth-of-type(#{$i}) {
+				margin: 0 0 30px 0;
+			}
+		}
+
+		a {
+			font-size: 20px;
+			color: $very-dark-grayish-blue;
+		}
+
+		button {
+			color: $very-dark-desaturated-blue;
+			background-color: $yellow;
+
+			&:hover {
+				color: $very-dark-desaturated-blue;
+				background-color: rgba($yellow, 0.5);
+			}
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 23px solid transparent;
+			border-right: 23px solid transparent;
+			border-bottom: 23px solid $menu-background;
+			border-left: 23px solid transparent;
+			position: absolute;
+			top: -23px;
+			right: 0;
+			transform: rotate(270deg);
+			-webkit-transform: rotate(270deg);
+			-moz-transform: rotate(270deg);
+			-ms-transform: rotate(270deg);
+			-o-transform: rotate(270deg);
 		}
 	}
 
