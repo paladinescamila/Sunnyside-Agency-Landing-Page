@@ -42,6 +42,10 @@
 			color: $white;
 			margin-right: 50px;
 
+			&:hover {
+				text-decoration: underline;
+			}
+
 			@media screen and (max-width: $break-point) {
 				font-size: 20px;
 			}
@@ -61,6 +65,11 @@
 			-moz-border-radius: 28px;
 			-ms-border-radius: 28px;
 			-o-border-radius: 28px;
+			transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+			-webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+			-moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+			-ms-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+			-o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
 			&:hover {
 				color: $white;

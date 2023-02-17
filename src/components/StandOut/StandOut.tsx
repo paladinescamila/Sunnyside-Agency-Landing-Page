@@ -7,17 +7,19 @@ export default function StandOut() {
 	return (
 		<>
 			<div className='stand-out-image'>
-				<img src={window.innerWidth > 600 ? DesktopStandOutImage : MobileStandOutImage} alt='' />
+				<img src={window.innerWidth > 800 ? DesktopStandOutImage : MobileStandOutImage} alt='' />
 			</div>
 			<div className='stand-out-text'>
-				<h2>Stand out to the right audience</h2>
-				<p>
-					Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend
-					your brand in digital places.
-				</p>
-				<a href='https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef' target='_blank' rel='noreferrer'>
-					LEARN MORE
-				</a>
+				<div>
+					<h2>Stand out to the right audience</h2>
+					<p>
+						Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend
+						your brand in digital places.
+					</p>
+					<a href='https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef' target='_blank' rel='noreferrer'>
+						LEARN MORE
+					</a>
+				</div>
 			</div>
 		</>
 	);

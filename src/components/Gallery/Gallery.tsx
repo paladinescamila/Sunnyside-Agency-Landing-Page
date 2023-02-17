@@ -15,16 +15,16 @@ export default function Gallery() {
 	return (
 		<>
 			<div className='milk-bottles'>
-				<img src={window.innerWidth > 600 ? DesktopMilkBottlesImage : MobileMilkBottlesImage} alt='' />
+				<img src={window.innerWidth > 800 ? DesktopMilkBottlesImage : MobileMilkBottlesImage} alt='' />
 			</div>
 			<div className='orange'>
-				<img src={window.innerWidth > 600 ? DesktopOrangeImage : MobileOrangeImage} alt='' />
+				<img src={window.innerWidth > 800 ? DesktopOrangeImage : MobileOrangeImage} alt='' />
 			</div>
 			<div className='cone'>
-				<img src={window.innerWidth > 600 ? DesktopConeImage : MobileConeImage} alt='' />
+				<img src={window.innerWidth > 800 ? DesktopConeImage : MobileConeImage} alt='' />
 			</div>
 			<div className='sugar-cubes'>
-				<img src={window.innerWidth > 600 ? DesktopSugarCubesImage : MobileSugarCubesImage} alt='' />
+				<img src={window.innerWidth > 800 ? DesktopSugarCubesImage : MobileSugarCubesImage} alt='' />
 			</div>
 		</>
 	);

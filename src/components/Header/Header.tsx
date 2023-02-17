@@ -10,7 +10,7 @@ export default function Header() {
 
 	return (
 		<div className='header'>
-			<img src={window.innerWidth > 600 ? DesktopHeaderImage : MobileHeaderImage} alt='' />
+			<img src={window.innerWidth > 800 ? DesktopHeaderImage : MobileHeaderImage} alt='' />
 			<div>
 				<img src={Logo} alt='' className='logo' />
 				<ul>
