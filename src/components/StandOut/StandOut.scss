@@ -65,10 +65,15 @@
 			-moz-border-radius: 50px;
 			-ms-border-radius: 50px;
 			-o-border-radius: 50px;
+			transition: background-color 0.3s ease-in-out;
+			-webkit-transition: background-color 0.3s ease-in-out;
+			-moz-transition: background-color 0.3s ease-in-out;
+			-ms-transition: background-color 0.3s ease-in-out;
+			-o-transition: background-color 0.3s ease-in-out;
 		}
 
 		&:hover::before {
-			background-color: $soft-red;
+			background-color: rgba($soft-red, 0.9);
 		}
 	}
 }

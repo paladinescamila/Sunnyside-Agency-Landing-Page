@@ -73,7 +73,7 @@
 		}
 
 		&:hover::before {
-			background-color: $yellow;
+			background-color: rgba($yellow, 0.8);
 		}
 	}
 }

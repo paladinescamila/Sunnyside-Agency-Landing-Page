@@ -26,6 +26,11 @@
 			font-size: 18px;
 			letter-spacing: 18px * (-0.05);
 			color: $footer-color;
+			transition: color 0.3s ease-in-out;
+			-webkit-transition: color 0.3s ease-in-out;
+			-moz-transition: color 0.3s ease-in-out;
+			-ms-transition: color 0.3s ease-in-out;
+			-o-transition: color 0.3s ease-in-out;
 
 			&:hover {
 				color: $white;
@@ -40,6 +45,7 @@
 
 		a:hover {
 			filter: brightness(10);
+			-webkit-filter: brightness(10);
 		}
 	}
 }
