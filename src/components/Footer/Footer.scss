@@ -20,6 +20,10 @@
 		grid-gap: 50px;
 		margin: 45px 0 90px 0;
 
+		@media screen and (max-width: 350px) {
+			grid-gap: 20px;
+		}
+
 		a {
 			text-decoration: none;
 			font-family: 'Barlow', sans-serif;

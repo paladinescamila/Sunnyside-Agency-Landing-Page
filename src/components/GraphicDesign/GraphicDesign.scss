@@ -25,5 +25,9 @@
 		line-height: 160%;
 		color: $dark-moderate-cyan;
 		width: 336px;
+
+		@media screen and (max-width: 350px) {
+			width: 90%;
+		}
 	}
 }

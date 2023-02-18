@@ -17,7 +17,9 @@ export default function Transform(props: TransformProps) {
 						We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals
 						that do most of the marketing for you.
 					</p>
-					<a href='https://www.frontendmentor.io/profile/paladinescamila'>LEARN MORE</a>
+					<a href='https://www.frontendmentor.io/profile/paladinescamila' target='_blank' rel='noreferrer'>
+						LEARN MORE
+					</a>
 				</div>
 			</div>
 			<div className='transform-image'>
