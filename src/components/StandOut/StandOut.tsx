@@ -22,7 +22,9 @@ export default function StandOut(props: StandOutProps) {
 						Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend
 						your brand in digital places.
 					</p>
-					<a href={link}>LEARN MORE</a>
+					<a href={link} aria-label='Link to learn more'>
+						LEARN MORE
+					</a>
 				</div>
 			</div>
 		</>

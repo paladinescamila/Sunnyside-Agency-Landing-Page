@@ -29,13 +29,19 @@ export default function Banner(props: BannerProps) {
 				{props.isDesktop && (
 					<ul className='menu-desktop'>
 						<li>
-							<a href={link}>About</a>
+							<a href={link} aria-label='Link to About section'>
+								About
+							</a>
 						</li>
 						<li>
-							<a href={link}>Services</a>
+							<a href={link} aria-label='Link to Services section'>
+								Services
+							</a>
 						</li>
 						<li>
-							<a href={link}>Projects</a>
+							<a href={link} aria-label='Link to Projects section'>
+								Projects
+							</a>
 						</li>
 						<li>
 							<button>CONTACT</button>
@@ -45,13 +51,19 @@ export default function Banner(props: BannerProps) {
 				{displayMenu && (
 					<ul className='menu-mobile'>
 						<li>
-							<a href={link}>About</a>
+							<a href={link} aria-label='Link to About section'>
+								About
+							</a>
 						</li>
 						<li>
-							<a href={link}>Services</a>
+							<a href={link} aria-label='Link to Services section'>
+								Services
+							</a>
 						</li>
 						<li>
-							<a href={link}>Projects</a>
+							<a href={link} aria-label='Link to Projects section'>
+								Projects
+							</a>
 						</li>
 						<li>
 							<button>CONTACT</button>
