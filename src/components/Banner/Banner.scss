@@ -2,7 +2,7 @@
 
 .banner {
 	grid-area: banner;
-	padding: 50px 50px 0 40px;
+	padding: 34px 48px 0 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -137,6 +137,7 @@
 	h1 {
 		font-family: 'Fraunces', serif;
 		font-size: 55px;
+		font-weight: 900;
 		letter-spacing: 55px * 0.2;
 		color: $white;
 		margin: 110px 0 70px 0;

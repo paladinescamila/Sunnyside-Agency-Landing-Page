@@ -25,7 +25,7 @@
 		}
 
 		li:nth-of-type(2) {
-			margin: 0 50px;
+			margin: 0 60px;
 		}
 
 		a {
@@ -47,9 +47,15 @@
 	}
 
 	.footer-socials {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@for $i from 1 through 3 {
+			li:nth-of-type(#{$i}) {
+				margin-right: 28px;
+			}
+		}
 
 		a:hover {
 			filter: brightness(10);
