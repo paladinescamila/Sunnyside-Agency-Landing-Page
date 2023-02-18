@@ -11,8 +11,9 @@ interface BannerProps {
 }
 
 export default function Banner(props: BannerProps) {
-	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
+	const link = '';
 
+	// Mobile menu
 	const [displayMenu, setDisplayMenu] = React.useState(false);
 	const toggleMenu = () => setDisplayMenu(!displayMenu);
 
@@ -28,19 +29,13 @@ export default function Banner(props: BannerProps) {
 				{props.isDesktop && (
 					<ul className='menu-desktop'>
 						<li>
-							<a href={link} target='_blank' rel='noreferrer'>
-								About
-							</a>
+							<a href={link}>About</a>
 						</li>
 						<li>
-							<a href={link} target='_blank' rel='noreferrer'>
-								Services
-							</a>
+							<a href={link}>Services</a>
 						</li>
 						<li>
-							<a href={link} target='_blank' rel='noreferrer'>
-								Projects
-							</a>
+							<a href={link}>Projects</a>
 						</li>
 						<li>
 							<button>CONTACT</button>
@@ -50,19 +45,13 @@ export default function Banner(props: BannerProps) {
 				{displayMenu && (
 					<ul className='menu-mobile'>
 						<li>
-							<a href={link} target='_blank' rel='noreferrer'>
-								About
-							</a>
+							<a href={link}>About</a>
 						</li>
 						<li>
-							<a href={link} target='_blank' rel='noreferrer'>
-								Services
-							</a>
+							<a href={link}>Services</a>
 						</li>
 						<li>
-							<a href={link} target='_blank' rel='noreferrer'>
-								Projects
-							</a>
+							<a href={link}>Projects</a>
 						</li>
 						<li>
 							<button>CONTACT</button>

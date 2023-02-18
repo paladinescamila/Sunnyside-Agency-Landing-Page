@@ -11,46 +11,40 @@ interface FooterProps {
 }
 
 export default function Footer(props: FooterProps) {
-	const link = 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef';
+	const link = '';
 
 	return (
 		<div className='footer'>
 			<img src={Logo} alt='' className='footer-logo' />
 			<ul className='footer-links'>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
-						About
-					</a>
+					<a href={link}>About</a>
 				</li>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
-						Services
-					</a>
+					<a href={link}>Services</a>
 				</li>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
-						Projects
-					</a>
+					<a href={link}>Projects</a>
 				</li>
 			</ul>
 			<ul className='footer-socials'>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
+					<a href={link}>
 						<img src={FacebookIcon} alt='' />
 					</a>
 				</li>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
+					<a href={link}>
 						<img src={InstagramIcon} alt='' />
 					</a>
 				</li>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
+					<a href={link}>
 						<img src={TwitterIcon} alt='' />
 					</a>
 				</li>
 				<li>
-					<a href={link} target='_blank' rel='noreferrer'>
+					<a href={link}>
 						<img src={PinterestIcon} alt='' />
 					</a>
 				</li>
