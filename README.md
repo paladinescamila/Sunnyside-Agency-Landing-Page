@@ -6,7 +6,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ## Links
 
--   [Solution](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-ajbyNJyCMW)
+-   [Solution](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-0QPqiVCidQ)
 -   [Live Site](https://salp-frontend-mentor.netlify.app/)
 
 ## Built with
