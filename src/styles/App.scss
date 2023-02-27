@@ -14,7 +14,7 @@ ul {
 #root {
 	display: grid;
 	grid-template-columns: repeat(4, 25vw);
-	grid-template-rows: 100vh 600px 600px 600px 777px 447px 350px;
+	grid-template-rows: 785px 600px 600px 600px 777px 447px 350px;
 	grid-template-areas:
 		'banner banner banner banner'
 		'transform-text transform-text transform-image transform-image'
